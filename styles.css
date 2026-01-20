@@ -4,7 +4,6 @@
    ========================================================= */
 
 /* ---------- Design tokens ---------- */
-body { outline: 8px solid hotpink !important; }
 
 :root{
   --bg-top: #050b18;

@@ -1,7 +1,7 @@
-// Year in footer
+// Footer year
 document.getElementById("year").textContent = new Date().getFullYear();
 
-// Mobile nav
+// Mobile nav toggle
 const navBtn = document.getElementById("navBtn");
 const mobileNav = document.getElementById("mobileNav");
 
@@ -16,7 +16,6 @@ navBtn.addEventListener("click", () => {
   }
 });
 
-// Close mobile nav when a link is clicked
 mobileNav.querySelectorAll("a").forEach((a) => {
   a.addEventListener("click", () => {
     mobileNav.setAttribute("hidden", "");

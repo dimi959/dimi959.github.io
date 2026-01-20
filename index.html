@@ -3,29 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Name — Building for what’s next</title>
-    <meta name="description" content="Minimal, future-focused portfolio site." />
-    <meta name="theme-color" content="#ffffff" />
+    <title>Dimitris Nikitas — Building for what’s next</title>
+    <meta name="description" content="Glacier-blue liquid glass portfolio." />
 
-    <!-- Social preview (optional) -->
-    <meta property="og:title" content="Your Name — Building for what’s next" />
-    <meta property="og:description" content="Minimal, future-focused portfolio site." />
-    <meta property="og:type" content="website" />
-
-    <link rel="stylesheet" href="styles.css" />
+    <!-- Cache-bust while iterating -->
+    <link rel="stylesheet" href="/styles.css?v=1" />
   </head>
-  <div class="liquid-layer" aria-hidden="true">
-    <div class="liquid-blob b1"></div>
-    <div class="liquid-blob b2"></div>
-    <div class="liquid-blob b3"></div>
-    <div class="liquid-grain"></div>
-  </div>
+
   <body>
+    <!-- Glacier liquid background layer -->
+    <div class="liquid-layer" aria-hidden="true">
+      <div class="liquid-blob b1"></div>
+      <div class="liquid-blob b2"></div>
+      <div class="liquid-blob b3"></div>
+      <div class="ice-caustics"></div>
+      <div class="liquid-grain"></div>
+    </div>
+
     <header class="header">
       <div class="container nav">
         <a class="brand" href="#top" aria-label="Homepage">
           <span class="brand-dot" aria-hidden="true"></span>
-          <span>Your Name</span>
+          <span>Dimitris Nikitas</span>
         </a>
 
         <nav class="nav-links" aria-label="Primary">
@@ -53,14 +52,12 @@
       <section class="hero">
         <div class="container hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow">Building for what’s next</p>
-            <h1>
-              I design and ship systems that feel simple — even when the engineering isn’t.
-            </h1>
+            <p class="eyebrow">Glacier systems • future-focused</p>
+            <h1>I build calm, resilient systems — and I’m always pushing forward.</h1>
             <p class="lead">
-              I’m a <strong>[role]</strong> focused on <strong>[domain]</strong>:
-              secure architectures, automation, and modern platforms.
-              I care about clarity, reliability, and future-proof decisions.
+              Technical architect and engineer focused on secure architecture, automation,
+              and experimental systems (drones/robotics). I care about clarity, reliability,
+              and designs that scale.
             </p>
 
             <div class="cta">
@@ -70,26 +67,18 @@
 
             <div class="meta">
               <span class="pill">Amsterdam / NL</span>
-              <span class="pill">Open source (select)</span>
-              <span class="pill">Systems + Architecture</span>
+              <span class="pill">Architecture + Automation</span>
+              <span class="pill">Glacier Blue mode</span>
             </div>
           </div>
 
           <div class="hero-media" aria-label="Showcase">
-            <!-- Option A: video -->
-            <!--
-            <video class="media" autoplay muted loop playsinline poster="assets/hero.jpg">
-              <source src="assets/hero.mp4" type="video/mp4" />
-            </video>
-            -->
-
-            <!-- Option B: image placeholder -->
             <div class="media placeholder">
               <div class="placeholder-inner">
                 <div class="spark"></div>
-                <p class="placeholder-title">Future-facing work</p>
+                <p class="placeholder-title">Water under ice</p>
                 <p class="placeholder-sub">
-                  Replace this with a product shot, diagram, or drone clip.
+                  Drop in a drone clip, diagram, or product shot later.
                 </p>
               </div>
             </div>
@@ -102,15 +91,13 @@
         <div class="container">
           <div class="section-head">
             <h2>Work</h2>
-            <p>Selected focus areas — practical today, scalable tomorrow.</p>
+            <p>Practical engineering with a future-proof mindset.</p>
           </div>
 
           <div class="grid3">
             <article class="card">
               <h3>Architecture</h3>
-              <p>
-                Secure-by-design systems, network patterns, and clean interfaces between teams and platforms.
-              </p>
+              <p>Secure-by-design systems and clean interfaces across teams and platforms.</p>
               <ul class="list">
                 <li>Reference architectures</li>
                 <li>Threat modeling</li>
@@ -120,23 +107,19 @@
 
             <article class="card">
               <h3>Automation</h3>
-              <p>
-                Reducing operational drag with robust pipelines and self-service workflows.
-              </p>
+              <p>Reducing friction with robust pipelines and safe defaults.</p>
               <ul class="list">
-                <li>CI/CD & release hygiene</li>
+                <li>CI/CD hygiene</li>
                 <li>Observability basics</li>
-                <li>Certificate / PKI flows</li>
+                <li>PKI / cert automation</li>
               </ul>
             </article>
 
             <article class="card">
               <h3>Future systems</h3>
-              <p>
-                Exploring what’s next: trustworthy AI, strong crypto, and systems that degrade gracefully.
-              </p>
+              <p>Exploring resilient systems: trustworthy AI, strong crypto, and autonomy.</p>
               <ul class="list">
-                <li>Security & governance</li>
+                <li>Governance & security</li>
                 <li>Private deployments</li>
                 <li>Proofs of concept</li>
               </ul>
@@ -150,35 +133,29 @@
         <div class="container">
           <div class="section-head">
             <h2>Projects</h2>
-            <p>Small set of things I’m proud of. More coming as testing completes.</p>
+            <p>A small set of things I’m building and documenting.</p>
           </div>
 
           <div class="grid2">
             <a class="card link-card" href="#" target="_blank" rel="noreferrer">
               <div class="card-top">
-                <h3>Drone stack (in test)</h3>
+                <h3>Drone stack (testing)</h3>
                 <span class="tag">Coming soon</span>
               </div>
               <p>
-                Open-source drone tooling: planning, telemetry, and reliability-first flight experiments.
-                Code will be published once validation is complete.
+                Open-source drone tooling: planning, telemetry, reliability-first flight experiments.
+                Code will be published after validation.
               </p>
-              <div class="card-bottom">
-                <span class="hint">Roadmap →</span>
-              </div>
+              <div class="card-bottom"><span class="hint">Roadmap →</span></div>
             </a>
 
-            <a class="card link-card" href="#" target="_blank" rel="noreferrer">
+            <a class="card link-card" href="https://github.com/dimi959" target="_blank" rel="noreferrer">
               <div class="card-top">
-                <h3>Automation toolkit</h3>
+                <h3>Tooling & templates</h3>
                 <span class="tag">Open</span>
               </div>
-              <p>
-                Scripts and templates that eliminate repetitive ops work and standardize delivery.
-              </p>
-              <div class="card-bottom">
-                <span class="hint">GitHub →</span>
-              </div>
+              <p>Small utilities and patterns that make engineering calmer and more repeatable.</p>
+              <div class="card-bottom"><span class="hint">GitHub →</span></div>
             </a>
 
             <a class="card link-card" href="#" target="_blank" rel="noreferrer">
@@ -186,12 +163,8 @@
                 <h3>Architecture notes</h3>
                 <span class="tag">WIP</span>
               </div>
-              <p>
-                Short write-ups: trade-offs, diagrams, and “why we chose X” in plain language.
-              </p>
-              <div class="card-bottom">
-                <span class="hint">Read →</span>
-              </div>
+              <p>Short write-ups: trade-offs, diagrams, and why decisions were made.</p>
+              <div class="card-bottom"><span class="hint">Read →</span></div>
             </a>
 
             <a class="card link-card" href="#" target="_blank" rel="noreferrer">
@@ -199,12 +172,8 @@
                 <h3>Talks / slides</h3>
                 <span class="tag">Selected</span>
               </div>
-              <p>
-                A few presentations on systems thinking, security fundamentals, and building for resilience.
-              </p>
-              <div class="card-bottom">
-                <span class="hint">View →</span>
-              </div>
+              <p>Selected presentations on systems thinking, security, and resilience.</p>
+              <div class="card-bottom"><span class="hint">View →</span></div>
             </a>
           </div>
         </div>
@@ -215,14 +184,14 @@
         <div class="container">
           <div class="section-head">
             <h2>Writing</h2>
-            <p>Short notes, clean diagrams, and practical lessons.</p>
+            <p>Notes in plain language, backed by engineering.</p>
           </div>
 
           <div class="stack">
             <a class="row" href="#" target="_blank" rel="noreferrer">
               <div>
                 <p class="row-title">Designing for failure without designing for fear</p>
-                <p class="row-sub">A quick approach to graceful degradation and operational calm.</p>
+                <p class="row-sub">Graceful degradation, operational calm, and clear trade-offs.</p>
               </div>
               <span class="row-right">→</span>
             </a>
@@ -230,7 +199,7 @@
             <a class="row" href="#" target="_blank" rel="noreferrer">
               <div>
                 <p class="row-title">Automation that doesn’t break at 3AM</p>
-                <p class="row-sub">Small patterns: idempotency, logging, and safe defaults.</p>
+                <p class="row-sub">Idempotency, observability, and safe defaults.</p>
               </div>
               <span class="row-right">→</span>
             </a>
@@ -242,40 +211,36 @@
       <section class="section" id="contact">
         <div class="container">
           <div class="contact">
-            <div>
+            <div class="card">
               <h2>Contact</h2>
               <p>
-                If you’re working on reliable systems, secure architecture, or future-facing engineering,
+                If you’re working on reliable systems, secure architecture, or autonomy,
                 I’m happy to talk.
               </p>
 
               <div class="contact-actions">
                 <a class="btn primary" href="mailto:you@example.com">Email</a>
-                <a class="btn" href="https://github.com/YOURUSERNAME" target="_blank" rel="noreferrer">GitHub</a>
+                <a class="btn" href="https://github.com/dimi959" target="_blank" rel="noreferrer">GitHub</a>
                 <a class="btn" href="#" target="_blank" rel="noreferrer">LinkedIn</a>
               </div>
 
               <p class="fine">
-                © <span id="year"></span> Your Name. Built with HTML/CSS. Hosted on GitHub Pages.
+                © <span id="year"></span> Dimitris Nikitas. Built with HTML/CSS. Hosted on GitHub Pages.
               </p>
             </div>
 
             <div class="card subtle">
               <p class="mini-title">Now</p>
-              <p class="mini">
-                Testing drone code & documenting results. Preparing open-source release once stable.
-              </p>
+              <p class="mini">Testing drone code & documenting results.</p>
               <hr class="sep" />
               <p class="mini-title">Next</p>
-              <p class="mini">
-                Publishing docs, adding demo footage, and sharing a roadmap with milestones.
-              </p>
+              <p class="mini">Publishing docs, demos, and a milestone roadmap.</p>
             </div>
           </div>
         </div>
       </section>
     </main>
 
-    <script src="script.js"></script>
+    <script src="/script.js?v=1"></script>
   </body>
 </html>
